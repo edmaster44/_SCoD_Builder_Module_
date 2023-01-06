@@ -1,6 +1,6 @@
 NDB V1.0
 0000001 0000001 0000002 0000006 0000015
-N00 ps_area_oocroom_onenter
+N00 ps_area_template_onenter
 s 03 vector
 sf f x
 sf f y

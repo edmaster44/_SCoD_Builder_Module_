@@ -11,7 +11,7 @@ void main() {
  	int iLock = GetGlobalInt(lockVariable);
  	if ( iLock == 0 )
  	{
-  		SetGlobalInt(lockVariable, 1); // Only allows one clean up at a time.
+  		SetGlobalInt(lockVariable, 1); // Makes sure the script doesn't retrigger while still running
   
 		//*******************************************************
 		//Spawn an NPC
@@ -25,6 +25,6 @@ void main() {
   		}
 		//*******************************************************
     
-  		SetGlobalInt(lockVariable, 0);
+  		SetGlobalInt(lockVariable, 0); //release area for future spawning
  	}
 }
